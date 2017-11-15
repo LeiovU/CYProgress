@@ -15,6 +15,11 @@
 		22B96C5B1FBC81D4005F58AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B96C5A1FBC81D4005F58AF /* main.m */; };
 		22B96C651FBC81D4005F58AF /* CYProgressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B96C641FBC81D4005F58AF /* CYProgressTests.m */; };
 		22B96C701FBC81D4005F58AF /* CYProgressUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B96C6F1FBC81D4005F58AF /* CYProgressUITests.m */; };
+		22B96C891FBC820F005F58AF /* CYImageOnlyHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B96C7F1FBC81E6005F58AF /* CYImageOnlyHUDView.m */; };
+		22B96C8A1FBC820F005F58AF /* CYProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B96C821FBC81E6005F58AF /* CYProgressHUD.m */; };
+		22B96C8B1FBC820F005F58AF /* CYProgressHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B96C841FBC81E6005F58AF /* CYProgressHUDView.m */; };
+		22B96C8C1FBC820F005F58AF /* CYTextAndImageHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B96C861FBC81E6005F58AF /* CYTextAndImageHUDView.m */; };
+		22B96C8D1FBC820F005F58AF /* CYTextOnlyHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B96C881FBC81E6005F58AF /* CYTextOnlyHUDView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,17 @@
 		22B96C6B1FBC81D4005F58AF /* CYProgressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYProgressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B96C6F1FBC81D4005F58AF /* CYProgressUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYProgressUITests.m; sourceTree = "<group>"; };
 		22B96C711FBC81D4005F58AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B96C7E1FBC81E6005F58AF /* CYImageOnlyHUDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYImageOnlyHUDView.h; sourceTree = "<group>"; };
+		22B96C7F1FBC81E6005F58AF /* CYImageOnlyHUDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYImageOnlyHUDView.m; sourceTree = "<group>"; };
+		22B96C801FBC81E6005F58AF /* CYPrivateHUDProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYPrivateHUDProtocol.h; sourceTree = "<group>"; };
+		22B96C811FBC81E6005F58AF /* CYProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYProgressHUD.h; sourceTree = "<group>"; };
+		22B96C821FBC81E6005F58AF /* CYProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYProgressHUD.m; sourceTree = "<group>"; };
+		22B96C831FBC81E6005F58AF /* CYProgressHUDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYProgressHUDView.h; sourceTree = "<group>"; };
+		22B96C841FBC81E6005F58AF /* CYProgressHUDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYProgressHUDView.m; sourceTree = "<group>"; };
+		22B96C851FBC81E6005F58AF /* CYTextAndImageHUDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTextAndImageHUDView.h; sourceTree = "<group>"; };
+		22B96C861FBC81E6005F58AF /* CYTextAndImageHUDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTextAndImageHUDView.m; sourceTree = "<group>"; };
+		22B96C871FBC81E6005F58AF /* CYTextOnlyHUDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTextOnlyHUDView.h; sourceTree = "<group>"; };
+		22B96C881FBC81E6005F58AF /* CYTextOnlyHUDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTextOnlyHUDView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		22B96C3F1FBC81D4005F58AF = {
 			isa = PBXGroup;
 			children = (
+				22B96C7D1FBC81E6005F58AF /* CYHud */,
 				22B96C4A1FBC81D4005F58AF /* CYProgress */,
 				22B96C631FBC81D4005F58AF /* CYProgressTests */,
 				22B96C6E1FBC81D4005F58AF /* CYProgressUITests */,
@@ -130,6 +147,24 @@
 				22B96C711FBC81D4005F58AF /* Info.plist */,
 			);
 			path = CYProgressUITests;
+			sourceTree = "<group>";
+		};
+		22B96C7D1FBC81E6005F58AF /* CYHud */ = {
+			isa = PBXGroup;
+			children = (
+				22B96C7E1FBC81E6005F58AF /* CYImageOnlyHUDView.h */,
+				22B96C7F1FBC81E6005F58AF /* CYImageOnlyHUDView.m */,
+				22B96C801FBC81E6005F58AF /* CYPrivateHUDProtocol.h */,
+				22B96C811FBC81E6005F58AF /* CYProgressHUD.h */,
+				22B96C821FBC81E6005F58AF /* CYProgressHUD.m */,
+				22B96C831FBC81E6005F58AF /* CYProgressHUDView.h */,
+				22B96C841FBC81E6005F58AF /* CYProgressHUDView.m */,
+				22B96C851FBC81E6005F58AF /* CYTextAndImageHUDView.h */,
+				22B96C861FBC81E6005F58AF /* CYTextAndImageHUDView.m */,
+				22B96C871FBC81E6005F58AF /* CYTextOnlyHUDView.h */,
+				22B96C881FBC81E6005F58AF /* CYTextOnlyHUDView.m */,
+			);
+			path = CYHud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B96C891FBC820F005F58AF /* CYImageOnlyHUDView.m in Sources */,
+				22B96C8A1FBC820F005F58AF /* CYProgressHUD.m in Sources */,
+				22B96C8B1FBC820F005F58AF /* CYProgressHUDView.m in Sources */,
+				22B96C8C1FBC820F005F58AF /* CYTextAndImageHUDView.m in Sources */,
+				22B96C8D1FBC820F005F58AF /* CYTextOnlyHUDView.m in Sources */,
 				22B96C501FBC81D4005F58AF /* ViewController.m in Sources */,
 				22B96C5B1FBC81D4005F58AF /* main.m in Sources */,
 				22B96C4D1FBC81D4005F58AF /* AppDelegate.m in Sources */,

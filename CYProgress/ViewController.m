@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CYProgressHUD.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    [CYProgressHUD showMessage:@"pod" andAutoHideAfterTime:2];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
